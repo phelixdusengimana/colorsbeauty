@@ -1,31 +1,12 @@
-import React from "react";
+import Home from "./pages/Home";
 
-class App extends React.Component {
-  state = {
-    loading: true
-  };
+function App(){
 
-  componentDidMount() {
-    PageWaits().then(() => this.setState({ loading: false }));
-  }
+  return(
+    <div className="App">
+      
+    </div>
+  );
   
-  render() {
-    const { loading } = this.state;
-    
-    if(loading) { 
-      return null; 
-    }
-    
-    return (
-      <div>I'm the app</div>
-    ); 
-
-  }
 }
-
-function PageWaits() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
-}
-
-
 export default App;
