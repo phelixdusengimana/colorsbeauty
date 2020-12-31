@@ -5,6 +5,13 @@ import reportWebVitals from './reportWebVitals';
 
 // css 
 import "./styles/index.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "./styles/App.css";
+// js
+import "bootstrap/dist/js/bootstrap.min";
+import "jquery/dist/jquery";
+import "popper.js";
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
