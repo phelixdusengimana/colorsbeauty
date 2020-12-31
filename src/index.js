@@ -4,8 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // css 
-import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
-
+import "./styles/index.css";
 ReactDOM.render(
   <React.StrictMode>
     <App />
