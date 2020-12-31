@@ -6,25 +6,24 @@ class App extends React.Component {
   };
 
   componentDidMount() {
-    // this simulates an async action, after which the component will render the content
-    demoAsyncCall().then(() => this.setState({ loading: false }));
+    PageWaits().then(() => this.setState({ loading: false }));
   }
   
   render() {
     const { loading } = this.state;
     
-    if(loading) { // if your component doesn't have to wait for an async action, remove this block 
-      return null; // render null when app is not ready
+    if(loading) { 
+      return null; 
     }
     
     return (
       <div>I'm the app</div>
     ); 
-    
+
   }
 }
 
-function demoAsyncCall() {
+function PageWaits() {
   return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
 
