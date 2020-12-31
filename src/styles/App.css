@@ -17,8 +17,22 @@
     background-image: url("../img/background.png");
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     position: relative;
     z-index: -1!important;
+}
+.home-bg .Slogan{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.home-bg .Slogan p{
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 30px;
 }
