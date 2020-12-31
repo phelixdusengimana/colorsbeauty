@@ -18,7 +18,7 @@ function Navabar() {
                                 <a className="nav-link" href="./">Flat Colors</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="./">Colors Shades</a>
+                                <a className="nav-link" href="./">s Shades</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="./">Gradients</a>
