@@ -36,3 +36,8 @@
     font-size: 17px;
     margin-top: 30px;
 }
+.home-bg .Button{
+background: linear-gradient(90deg, rgba(17,0,255,1) 0%, rgba(0,76,255,1) 35%);
+color: #fff;
+font-weight: 500;
+}
