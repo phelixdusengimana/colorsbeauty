@@ -1,3 +1,9 @@
+.navbar{
+    position: sticky!important;
+    top: 0;
+    z-index: 20!important;
+    background-color: #fff;
+}
 .navbar .navbar-nav .nav-item .nav-link{
     font-size: 14px;
     font-weight: 500;
@@ -10,6 +16,9 @@
 .home-bg{
     background-image: url("../img/background.png");
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: -1!important;
 }

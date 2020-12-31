@@ -4,6 +4,7 @@ function Home(){
   return(
      <div className="Home-container">
         <Navbar/>
+        
         <div className="home-bg">
 
         </div>
