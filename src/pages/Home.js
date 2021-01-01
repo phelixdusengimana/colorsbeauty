@@ -60,6 +60,10 @@ function Home(){
         <ColorPlate code="#5091a3"/>
        </div>
        </div>
+       <div className="container">
+
+       
+       </div>
      <Footer/>
      </div>
   );
