@@ -1,6 +1,8 @@
 import Navbar from "../components/Navbar";
 import ColorPlate from "../components/ColorPlate";
 import CoName from "../img/ColorsBeauty.png";
+import Slide from 'react-reveal/Slide';
+
 function Home(){
   return(
      <div className="Home-container">
@@ -15,12 +17,33 @@ function Home(){
            </div>   
         </div>
         
-        <div className="mt-5 container">
-         <h3>Colors</h3>
-        <ColorPlate/>
+        <div className="mt-5 container" id="flatColors">
+        <Slide bottom>
+          <h1>Flat Colors</h1>
+        </Slide>
+        <ColorPlate code="#346beb"/>
+        <ColorPlate code="#fcba03"/>
+        <ColorPlate code="#fcba03"/>
+        <ColorPlate code="#fc032d"/>
+        <ColorPlate code="#31374a"/>
+        <ColorPlate code="#03c8ff"/>
+        <ColorPlate code="#31374a"/>
+        <ColorPlate code="#5091a3"/>
+        
         </div>
-
-        <h1>Hello</h1>
+        
+       <div className="mt-5 container">
+       <h3>Gradients</h3>
+        <ColorPlate code="#346beb"/>
+        <ColorPlate code="#fcba03"/>
+        <ColorPlate code="#fcba03"/>
+        <ColorPlate code="#fc032d"/>
+        <ColorPlate code="#31374a"/>
+        <ColorPlate code="#03c8ff"/>
+        <ColorPlate code="#31374a"/>
+        <ColorPlate code="#5091a3"/>
+       </div>
+       
      </div>
   );
 }

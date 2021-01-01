@@ -1,18 +1,22 @@
 import  {BiWindowOpen} from "react-icons/bi";
 import {FiCopy} from "react-icons/fi";
+import Slide from 'react-reveal/Slide';
 
-function ColorPlate() {
+function ColorPlate(props) {
+
     return (
-            <div className="card" style={{color: "#f5f6fa", width: "18rem", height: "12em", margin: "10px 0", padding: "10px", position: "relative", backgroundColor: "#0061bd", cursor:"pointer"}}>
+        <Slide bottom>
+            <div className="card ml-3 border-0 shadow" style={{color: "#f5f6fa", width: "15rem", height: "12em", margin: "10px 0", padding: "10px", position: "relative", backgroundColor: props.code, cursor:"pointer",display:"inline-block"}}>
                 <div className="card-body">
-                   <small className="card-subtitle mb-2">Color name:  </small>
-                    <h5 className="card-title">#346beb</h5>
+                   <small className="card-subtitle mb-2"><i>Color code </i></small>
+                    <h5 className="card-title">{props.code}</h5>
                     <div className="bottomed" style={{position:"absolute",bottom:"10px"}}>
                     <button className="card-link"><FiCopy/></button>
                     <button className="card-link"><BiWindowOpen/></button>
                     </div>
                 </div>
             </div>
+            </Slide>
     );
 }
 

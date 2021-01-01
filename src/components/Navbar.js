@@ -15,7 +15,7 @@ function Navabar() {
                                 <a className="nav-link active" aria-current="page" href="./">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="./">Flat Colors</a>
+                                <a className="nav-link" href="#flatColors">Flat Colors</a>
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link" href="./">Colors Shades</a>
