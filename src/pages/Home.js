@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import ColorPlate from "../components/ColorPlate";
 import CoName from "../img/ColorsBeauty.png";
 function Home(){
   return(
@@ -14,7 +15,12 @@ function Home(){
            </div>   
         </div>
         
-        
+        <div className="mt-5 container">
+         <h3>Colors</h3>
+        <ColorPlate/>
+        </div>
+
+        <h1>Hello</h1>
      </div>
   );
 }
