@@ -42,3 +42,12 @@ background: linear-gradient(90deg, rgba(17,0,255,1) 0%, rgba(0,76,255,1) 35%);
 color: #fff;
 font-weight: 500;
 }
+
+.card button{
+    background-color: transparent;
+    border: none;
+    color: #f5f6fa;
+}
+.card button:focus{
+    outline: none;
+}
