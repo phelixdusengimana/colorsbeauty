@@ -32,7 +32,7 @@ function Home(){
         
         </div>
     
-       <div className="mt-5 container">
+       <div className="mt-5 container" id="gradients">
        <Slide bottom>
           <h1>Gradients</h1>
         </Slide>
@@ -46,7 +46,7 @@ function Home(){
         <ColorPlate code="#5091a3"/>
        </div>
 
-       <div className="mt-5 container">
+       <div className="mt-5 container" id="colorShades">
        <Slide bottom>
           <h1>Colors Shades</h1>
         </Slide>
