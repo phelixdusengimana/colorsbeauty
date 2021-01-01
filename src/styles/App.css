@@ -48,6 +48,30 @@ font-weight: 500;
     border: none;
     color: #f5f6fa;
 }
+.card:hover{
+    cursor: pointer!important;
+}
+
 .card button:focus{
     outline: none;
+}
+.bg{
+    background-image: url("../img/bg2.png");
+}
+footer a{
+    color: #1D1D1D;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+footer .icons{
+    font-size: 20px;
+}
+footer .icons:nth-child(1){
+    color: #346beb;
+}
+footer .icons:nth-child(2){
+    color: #00c8ff;
+}
+footer .icons:nth-child(3){
+    color: #8a3ab9	;
 }
