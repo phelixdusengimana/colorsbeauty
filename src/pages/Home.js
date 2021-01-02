@@ -21,6 +21,11 @@ function Home(){
         <Slide bottom>
           <h1>Flat Colors</h1>
         </Slide>
+        
+        <div>
+
+        </div>
+
         <ColorPlate code="#346beb"/>
         <ColorPlate code="#fcba03"/>
         <ColorPlate code="#fcba03"/>
