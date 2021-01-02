@@ -7,16 +7,10 @@ import Gradient from "../components/Gradients";
 import Slide from 'react-reveal/Slide';
 import Footer from "../components/Footer";
 function Home(){
-   
+
    const colors = [
       {
          id: 1,
-         code: "#fcba03",
-         name: "",
-         descriptions: ""
-      },
-      {
-         id: 2,
          code: "#fcba03",
          name: "",
          descriptions: ""
@@ -40,12 +34,6 @@ function Home(){
          descriptions: ""
       },
       {
-         id: 6,
-         code: "#31374a",
-         name: "",
-         descriptions: ""
-      },
-      {
          id: 7,
          code: "#5091a3",
          name: "",
@@ -61,32 +49,38 @@ function Home(){
 
    const gradients=[
       {
+         id: 1,
          code: "linear-gradient(to right, #00b09b, #96c93d)",
          alternative: "-webkit-linear-gradient(to right, #00b09b, #96c93d);",
          name: "",
          descriptions: ""
       },
       {
+         id: 2,
          code: "linear-gradient(to right, #cac531, #f3f9a7)",
          name: "",
          descriptions: ""
       },
       {
+         id: 3,
          code: "linear-gradient(to right, #800080, #ffc0cb)",
          name: "",
          descriptions: ""
       },
       {
+         id: 4,
          code: "linear-gradient(to right, #800080, #ffc0cb)",
          name: "",
          descriptions: ""
       },
       {
+         id: 5,
          code: "linear-gradient(to right, #22c1c3, #fdbb2d)",
          name: "",
          descriptions: ""
       },
       {
+         id: 6,
          code: "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)",
          name: "",
          descriptions: ""
@@ -109,7 +103,7 @@ function Home(){
 
     const AllGradientDiv = gradients.map((gradient)=>
       <div className="col-md-4">
-      <Gradient code={gradient.code} key={gradient.code}/>
+      <Gradient code={gradient.code} key={gradient.id}/>
       </div>   
     );
 
@@ -133,9 +127,7 @@ function Home(){
         </div>
         <div className="bg">
         <div className="mt-5 container" id="flatColors">
-        <Slide bottom>
           <h1>Flat Colors</h1>
-        </Slide>
 
         <div className="row">
           {AllcolorsDiv}
@@ -144,27 +136,34 @@ function Home(){
       </div>
     
        <div className="mt-5 container" id="gradients">
-       <Slide bottom>
           <h1>Gradients</h1>
-        </Slide>
         <div className="row">
            {AllGradientDiv}
         </div>
        </div>
 
        <div className="mt-5 container" id="colorShades">
-       <Slide bottom>
-          <h1>Colors Shades</h1>
-        </Slide>
+          {/* <h1>Colors Shades</h1> */}
         <div className="row">
            {/* {AllColorShades} */}
         </div>
        </div>
        </div>
-       <div className="container">
 
-       
+       <div className="container">
+          <h1>Latest Blogs</h1>
+          <div className="latest-blog">
+
+          </div>
        </div>
+
+       <div className="container">
+          <h1>Contact us</h1>
+          <div className="contact-us">
+
+          </div>
+       </div>
+
      <Footer/>
      </div>
   );
