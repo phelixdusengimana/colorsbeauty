@@ -1,47 +1,58 @@
 import Navbar from "../components/Navbar";
 import ColorPlate from "../components/ColorPlate";
 import Gradient from "../components/Gradients";
+// import Shade from "../components/Shades";
+
 // import CoName from "../img/ColorsBeauty.png";
 import Slide from 'react-reveal/Slide';
 import Footer from "../components/Footer";
 function Home(){
+   
    const colors = [
       {
+         id: 1,
          code: "#fcba03",
          name: "",
          descriptions: ""
       },
       {
+         id: 2,
          code: "#fcba03",
          name: "",
          descriptions: ""
       },
       {
+         id: 3,
          code: "#fc032d",
          name: "",
          descriptions: ""
       },
       {
+         id: 4,
          code: "#31374a",
          name: "",
          descriptions: ""
       },
       {
+         id: 5,
          code: "#03c8ff",
          name: "",
          descriptions: ""
       },
       {
+         id: 6,
          code: "#31374a",
          name: "",
          descriptions: ""
       },
       {
+         id: 7,
          code: "#5091a3",
          name: "",
          descriptions: ""
       },
       {
+         id: 8,
          code: "#346beb",
          name: "",
          descriptions: ""
@@ -82,20 +93,31 @@ function Home(){
       },
    ]
 
-   const shades = [
-      
-   ]
+   // const shades = [
+   //    {
+   //       codes : [
+   //          {value: "#E35152", value:"#EB8484",value:"#F3B6B7",value:"#FBE9E9"}
+   //       ],
+   //       name: "hematite"
+   //    }
+   // ]
    const AllcolorsDiv = colors.map((color) =>
    <div className="col-md-4">
-    <ColorPlate code={color.code}/>
+    <ColorPlate code={color.code} key={color.id}/>
     </div>
     );
 
     const AllGradientDiv = gradients.map((gradient)=>
       <div className="col-md-4">
-      <Gradient code={gradient.code}/>
+      <Gradient code={gradient.code} key={gradient.code}/>
       </div>   
     );
+
+   //  const AllColorShades = shades.map((shade)=>
+   //   <div className="col-md-4">
+   //     <Shade colors ={shade.codes} name={shade.name} ></Shade>
+   //   </div>
+   //  )
 
   return(
      <div className="Home-container">
@@ -134,14 +156,9 @@ function Home(){
        <Slide bottom>
           <h1>Colors Shades</h1>
         </Slide>
-        <ColorPlate code="#346beb"/>
-        <ColorPlate code="#fcba03"/>
-        <ColorPlate code="#fcba03"/>
-        <ColorPlate code="#fc032d"/>
-        <ColorPlate code="#31374a"/>
-        <ColorPlate code="#03c8ff"/>
-        <ColorPlate code="#31374a"/>
-        <ColorPlate code="#5091a3"/>
+        <div className="row">
+           {/* {AllColorShades} */}
+        </div>
        </div>
        </div>
        <div className="container">
